@@ -1,0 +1,24 @@
+body {
+  background-color: steelblue;
+}
+
+#canvas {
+  border: solid white;
+  background-color: black;
+}
+
+#nextBlock {
+    left: 400px;
+    top: 0%;
+    position: absolute;
+}
+
+#reset {
+    background-color: gold;
+}
+
+#up {
+    top: 610px;
+    left: 60px;
+    position: absolute;
+}

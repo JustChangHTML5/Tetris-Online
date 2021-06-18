@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Tetris (Tutorial)</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h3 id="score">Score: 0</h3>
+	<h3 id="highScore">High Score: 0</h3>
+	<button id="reset" class="menu" onclick="resetGame();">Restart Game<br />Start Game</button>
+    <button id="pause" class="menu" onclick="if (pause) {pause = false;} else {pause = true;}">Pause<br />Unpause</button>
+    <p></p>
+    <canvas id="canvas"></canvas>
+    <div id="nextBlock"><img id="nextimg" src="/sources/lose/steel-blue-color-solid-background-1920x1080.png" width="100px"></img></div>
+        <audio contorols autoplay loop>
+            <source src="/sources/music/Tetris.ogg" type="audio/ogg">
+            <source src="/sources/music/Tetris.mp3" type="audio/mpeg">
+            Ur Browser not support da music.
+        </audio>
+    <p></p>
+    <button id="up" onclick="var newTetromino = rotateTetromino(curTetromino); updatePlayfield(newTetromino, tetrominoNum + 1); curTetromino = newTetromino;">Up</button><p></p>
+    <button onclick="var newTetromino = moveTetrominoLeft();  updatePlayfield(newTetromino, tetrominoNum + 1); curTetromino = newTetromino;">Left</button>
+    <button onclick="speed = 3;">Down</button>
+    <button onclick="var newTetromino = moveTetrominoRight(); updatePlayfield(newTetromino, tetrominoNum + 1); curTetromino = newTetromino;">Right</button>
+    <script src="script.js"></script>
+  </body>
+</html>
