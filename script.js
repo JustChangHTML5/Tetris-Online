@@ -455,10 +455,6 @@ function main() {
 
 }
 
-function startGame() {
-    var gameLoop = setInterval(main, 10);
-}
-
 function resetGame() {
     curTetromino = null;
     tetrominoNum = 0;
